@@ -1571,7 +1571,7 @@ section {
   opacity: 1;
 }
 
-}
+
 @media (max-width: 768px) {
   #footer .copyright, #footer .credits {
     float: none;
