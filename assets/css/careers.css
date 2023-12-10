@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    color: #2d3e50;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.about-us {
+    flex: 1;
+    padding: 20px;
+    color: #333333;
+    max-width: 500px;
+}
+
+.about-us h1 {
+    color: orange;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    line-height: 1.5;
+}
+
+.about-hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .swction-1 {
+        flex-direction: column;
+    }
+
+    .about-us, .about-hero-image {
+        flex: none;
+        width: 100%;
+    }
+}
+
+
+.section-2 {
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.benefits-section {
+    background: #ffffff;
+    color: #333333;
+    padding: 20px;
+}
+
+.benefits-title {
+    color: black;
+    margin-bottom: 20px;
+}
+
+.benefits-title-text{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.benefits-card {
+    padding: 1rem 2rem 0.5rem 2rem;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    text-align: left;
+    height: 100%;
+    border-radius: 2rem !important;
+}
+
+.benefits-card-title {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.benefits-card-title i {
+    margin-right: 10px;
+}
+
+.benefits-list {
+    padding-left: 1rem;
+    color: rgb(153, 153, 153);
+    font-family: "Open Sans", sans-serif;
+}
+
+.flag{
+    float: right;
+}
+
+
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #ffffff;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, max-content));
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding-top: 2rem;
+}
+
+.job-card {
+    background-color: #bdc3c7;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+.job-card h3 {
+    margin-top: 0;
+}
+
+.job-card button {
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.job-card button:hover {
+    background-color: darkorange;
+}
+
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 20px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.apply-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px;
+    z-index: 10;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field input[type="tel"],
+.form-field input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-field input[type="text"]:focus,
+.form-field input[type="email"]:focus,
+.form-field input[type="tel"]:focus {
+    border-color: orange !important;
+}
+
+.submit-button {
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: darkorange;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px !important;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.job-details p {
+    margin-bottom: 10px;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-primary {
+    background-color: orange !important;
+    border: darkorange !important;
+}
+.submit-button:hover {
+    background-color: darkorange !important;
+}
+
+.btn-secondary {
+    border: none;
+    color: orange !important;
+}
+
+.job-description {
+    display: none;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    z-index: 10;
+    overflow: auto;
+}
+
+.job-description h3 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.job-description p {
+    line-height: 1.5;
+}
+
+.job-description h2{
+    text-align: center;
+}
+
