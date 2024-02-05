@@ -841,7 +841,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- JOB 8 -->
             <div class="card">
                 <div class="card-body">
@@ -927,90 +927,6 @@
                 document.getElementById(formId).style.display = "none";
             }
         </script>
-    </div>
-
-    <!-- JOB 8 -->
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Memory Layout Engineer</h5>
-            <div class="job-details">
-                <p><i class="bi bi-geo-alt"></i> Bangalore, India</p>
-                <p><i class="bi bi-briefcase"></i> Full Time</p>
-            </div>
-            <div class="card-buttons">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#applyNowModal"
-                    onclick="on('overlay15', 'apply-form8')">Apply Now</button>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#jobDescriptionModal" onclick="on('overlay16', 'job-description8')">Job
-                    Description</button>
-            </div>
-            <div class="overlay" id="overlay15" onclick="off('overlay15', 'apply-form8')"></div>
-            <form class="apply-form" id="apply-form8" action="mailto:recruit@uandwe.com?subject=Job Application"
-                method="POST" enctype="text/plain">
-                <div class="form-title">
-                    Application Form
-                </div>
-                <div class="form-field">
-                    <input type="text" id="job-title" name="job-title" value="Memory Layout Engineer India" hidden>
-                </div>
-                <div class="form-field">
-                    <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div class="form-field">
-                    <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div class="form-field">
-                    <label for="email">Email ID:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-field">
-                    <label for="contact-number">Contact Number:</label>
-                    <input type="tel" id="contact-number" name="contact-number" required>
-                </div>
-                <div class="form-note" style="color: red; margin-bottom: 10px;">
-                    <h6>Note:</h6>
-                    <ul>
-                        <li>Clicking on the 'Next' button will open your default mail app. Kindly attach your
-                            resume before sending the mail.</li>
-                        <li>In case of absence of / faulty mail app please mail 'recruit@uandwe.com' with
-                            the necessary details and enclosed resume.</li>
-                    </ul>
-                </div>
-                <button type="submit" class="submit-button">Next</button>
-            </form>
-            <div class="overlay" id="overlay16" onclick="off('overlay16', 'job-description8')"></div>
-            <div class="job-description" id="job-description8">
-                <h2>Job Description</h2>
-                <h3>Location: <span style="color: black"> Bangalore, India</span></h3>
-                <h3>Experience: <span style="color: black"> 3-7 Years</span></h3>
-
-                <h3>Requirements</h3>
-                <ul>
-                    <li>Development of key building blocks of memory architecture such as Row Decoder, IO, Control.</li>
-                    <li>Skilled in pitched layout concepts, floor planning for Placement, Power and Global Routing.</li>
-                    <li>Compiler level integration, verification of Compiler/Custom memories.</li>
-                    <li>Layout Design of SRAM/CAM/RF compiler memories in 5/3FF technology.</li>
-                    <li>Well experienced in using industry standard EDA tools like Cadence Virtuoso, Mentor Graphics Caliber etc.</li>
-                    <li>Good problem solving and logical reasoning skills.</li>
-                    <li>Good communication skills required.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- Add more job cards as needed -->
-    </div>
-    <script>
-        function on(overlayId, formId) {
-            document.getElementById(overlayId).style.display = "block";
-            document.getElementById(formId).style.display = "block";
-        }
-        function off(overlayId, formId) {
-            document.getElementById(overlayId).style.display = "none";
-            document.getElementById(formId).style.display = "none";
-        }
-    </script>
     </div>
 
     <!-- Bootstrap script -->
