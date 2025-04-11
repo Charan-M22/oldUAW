@@ -297,6 +297,18 @@ body {
     gap: 20px;
 }
 
+.no-jobs-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #555;
+    font-style: italic;
+    padding: 20px;
+    border: 1px dashed #ccc; /* Optional styling */
+    margin-top: 20px;      /* Optional styling */
+}
+
 .btn-primary {
     background-color: orange !important;
     border: darkorange !important;
