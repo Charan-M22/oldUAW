@@ -135,22 +135,6 @@
                 </div>
             </div>
         </div>
-        <script>
-        function toggleBenefits(contentId, headerElement) {
-            const content = document.getElementById(contentId);
-            const toggleLink = headerElement.querySelector('.toggle-link');
-
-            // Toggle 'expanded' class on the content to show/hide it
-            content.classList.toggle('expanded');
-
-            // Update the link text based on the new state
-            if (content.classList.contains('expanded')) {
-                toggleLink.textContent = 'view less';
-            } else {
-                toggleLink.textContent = '... view more';
-            }
-        }
-    </script>
     </div>
     <div class="section-3" data-aos="fade-up" data-aos-delay="100">
         <h1 class="jobs-title" style="font-weight: 700; color: orange;">
@@ -6302,6 +6286,18 @@
                 document.getElementById(overlayId).style.display = "none";
                 document.getElementById(formId).style.display = "none";
             }
+            function toggleBenefits(contentId, headerElement) {
+                const content = document.getElementById(contentId);
+                const toggleLink = headerElement.querySelector('.toggle-link');
+
+                content.classList.toggle('expanded');
+
+                if (content.classList.contains('expanded')) {
+                    toggleLink.textContent = 'view less';
+                } else {
+                    toggleLink.textContent = '... view more';
+                }
+            }
         </script>
     </div>
     <script>
@@ -6322,7 +6318,7 @@
         });
     </script>
 
-    
+
 
 
     <!-- Bootstrap script -->
