@@ -40,7 +40,7 @@ body {
     text-align: center;
 }
 
-.about-image{
+.about-image {
     width: 80%;
     height: 80%;
     object-fit: cover;
@@ -57,7 +57,8 @@ body {
         flex-direction: column;
     }
 
-    .about-us, .about-hero-image {
+    .about-us,
+    .about-hero-image {
         flex: none;
         width: 100%;
     }
@@ -86,7 +87,7 @@ body {
     margin-bottom: 20px;
 }
 
-.benefits-title-text{
+.benefits-title-text {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -95,7 +96,7 @@ body {
 .benefits-card {
     padding: 1rem 2rem 0.5rem 2rem;
     margin-bottom: 20px;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     text-align: left;
     height: 100%;
     border-radius: 2rem !important;
@@ -119,7 +120,7 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-.flag{
+.flag {
     float: right;
 }
 
@@ -136,7 +137,8 @@ body {
 
 .jobs {
     display: grid;
-    width: 75%; /*This is the width of the grid*/
+    width: 75%;
+    /*This is the width of the grid*/
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     /* grid-template-rows: repeat(2, 1fr); */
     grid-column-gap: 15px;
@@ -305,14 +307,17 @@ body {
     color: #555;
     font-style: italic;
     padding: 20px;
-    border: 1px dashed #ccc; /* Optional styling */
-    margin-top: 20px;      /* Optional styling */
+    border: 1px dashed #ccc;
+    /* Optional styling */
+    margin-top: 20px;
+    /* Optional styling */
 }
 
 .btn-primary {
     background-color: orange !important;
     border: darkorange !important;
 }
+
 .submit-button:hover {
     background-color: darkorange !important;
 }
@@ -333,7 +338,7 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     z-index: 10;
     overflow: auto;
 }
@@ -347,7 +352,53 @@ body {
     line-height: 1.5;
 }
 
-.job-description h2{
+.job-description h2 {
     text-align: center;
 }
 
+/* Styles for the collapsible sub-list */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding-left: 25px;
+    list-style-type: circle;
+    /* Smooth transition for expand/collapse */
+    transition: max-height 0.4s ease-in-out, margin-top 0.4s ease-in-out;
+}
+
+/* State when the content is visible */
+.collapsible-content.expanded {
+    max-height: 300px;
+    /* Adjust if your content is taller */
+    margin-top: 8px;
+}
+
+/* Styles for the clickable header row */
+.expandable-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    /* Indicates the entire row is clickable */
+}
+
+/* Style for the '... view more' link */
+.toggle-link {
+    font-size: 0.9rem;
+    color: #6c757d;
+    /* Subtle grey color */
+    font-style: italic;
+    text-decoration: none;
+    margin-left: 8px;
+    /* Space from the title */
+    white-space: nowrap;
+    /* Prevents text from wrapping */
+    transition: color 0.2s;
+}
+
+.expandable-header:hover .toggle-link {
+    color: #007bff;
+    /* Highlight on hover */
+}

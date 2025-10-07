@@ -78,10 +78,11 @@
             <div class="col-sm col-md-6 ">
                 <div class="card benefits-card">
                     <div class="card-body">
-                        <h5 class="card-title benefits-card-title"><span><span style="color: orange;">India
-                                    &nbsp;</span>Region</span> <span><img
-                                    src="https://images.emojiterra.com/twitter/v14.0/128px/1f1ee-1f1f3.png"
-                                    class="flag"></span></h5>
+                        <h5 class="card-title benefits-card-title">
+                            <span><span style="color: orange;">India&nbsp;</span>Region</span>
+                            <span><img src="https://images.emojiterra.com/twitter/v14.0/128px/1f1ee-1f1f3.png"
+                                    class="flag"></span>
+                        </h5>
                         <p class="u-text u-text-4">Employee benefits include:</p>
                         <ul class="benefits-list">
                             <li> Provident Fund</li>
@@ -90,17 +91,36 @@
                             <li>Professional Allowance</li>
                             <li>Special Allowance</li>
                             <li>Flexible Work Options (Depending on project needs)</li>
+                            <li>
+                                <div class="expandable-header" onclick="toggleBenefits('salaryAccountDetails', this)">
+                                    <span>Corporate Salaried Account</span>
+                                    <span class="toggle-link">... view more</span>
+                                </div>
+                                <ul id="salaryAccountDetails" class="collapsible-content">
+                                    <li>Zero Service Charges</li>
+                                    <li>Monthly Interest Credit</li>
+                                    <li>Complimentary Airport Lounge with Air and Personal Accident Insurance Cover</li>
+                                    <li>Personal and Home Loans</li>
+                                    <li>New Car loan &amp; Used Car Loan at competitive rate</li>
+                                    <li>Two-Wheeler loans and Consumer Durable loans at competitive rates</li>
+                                    <li>Educational Loan with Preferential Interest Rates</li>
+                                    <li>Unlimited ATM withdrawals at any Bank ATM</li>
+                                    <li>Lifetime free Credit Card</li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div class="col-sm col-md-6 ">
                 <div class="card benefits-card">
                     <div class="card-body">
-                        <h5 class="card-title benefits-card-title"><span><span style="color: orange;">USA
-                                    &nbsp;</span>Region</span> <span><img
-                                    src="https://images.emojiterra.com/twitter/v14.0/128px/1f1fa-1f1f8.png"
-                                    class="flag"></span></h5>
+                        <h5 class="card-title benefits-card-title">
+                            <span><span style="color: orange;">USA&nbsp;</span>Region</span>
+                            <span><img src="https://images.emojiterra.com/twitter/v14.0/128px/1f1fa-1f1f8.png"
+                                    class="flag"></span>
+                        </h5>
                         <p class="u-text u-text-4">Employee benefit plans which include:</p>
                         <ul class="benefits-list">
                             <li>Medical</li>
@@ -109,6 +129,7 @@
                             <li>401(k) plan</li>
                             <li>Paid Time Off</li>
                             <li>Short-term disability plans</li>
+                            <li>Health Savings Accounts (HSA)</li>
                         </ul>
                     </div>
                 </div>
@@ -6283,6 +6304,23 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        function toggleBenefits(contentId, headerElement) {
+            const content = document.getElementById(contentId);
+            const toggleLink = headerElement.querySelector('.toggle-link');
+
+            // Toggle 'expanded' class on the content to show/hide it
+            content.classList.toggle('expanded');
+
+            // Update the link text based on the new state
+            if (content.classList.contains('expanded')) {
+                toggleLink.textContent = 'view less';
+            } else {
+                toggleLink.textContent = '... view more';
+            }
+        }
     </script>
 
 
